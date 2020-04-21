@@ -1,0 +1,34 @@
+{
+  "books": [
+    {
+      "title": "The Big Switch",
+      "rating": "4.3",
+      "id": 1
+    },
+    {
+      "title": "Wings of Fire",
+      "rating": "4.8",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "title": "Alice Adventure",
+      "rating": "3.6"
+    },
+    {
+      "id": 4,
+      "title": "Change the thinking",
+      "rating": "3.2"
+    },
+    {
+      "id": 5,
+      "title": "Rich Dad, Poor Dad",
+      "rating": "4"
+    },
+    {
+      "title": "Harry",
+      "rating": "3.5",
+      "id": 6
+    }
+  ]
+}
