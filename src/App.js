@@ -42,7 +42,7 @@ class App extends React.Component {
 
   addBook = () => {
     axios
-      .post('http://localhost:3005/books', this.state.newBookData)
+      .post('https://tranquil-gorge-80875.herokuapp.com/books', this.state.newBookData)
       .then((res) => {
         let { books } = this.state;
         books.push(res.data);
@@ -66,7 +66,7 @@ class App extends React.Component {
   };
 
   refreshList = () => {
-    axios.get('http://localhost:3005/books').then((resp) => {
+    axios.get('https://tranquil-gorge-80875.herokuapp.com/books').then((resp) => {
       this.setState({
         books: resp.data,
       });

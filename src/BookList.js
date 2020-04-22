@@ -58,7 +58,7 @@ class BookList extends React.Component {
   updateBook = () => {
     let { title, rating } = this.state.editBookData;
     axios
-      .put('http://localhost:3005/books/' + this.state.editBookData.id, {
+      .put('https://tranquil-gorge-80875.herokuapp.com/books/' + this.state.editBookData.id, {
         title,
         rating,
       })
@@ -74,7 +74,7 @@ class BookList extends React.Component {
   };
 
   deleteBook = (id) => {
-    axios.delete('http://localhost:3005/books/' + id).then((res) => {
+    axios.delete('https://tranquil-gorge-80875.herokuapp.com/books/' + id).then((res) => {
       this.props.refreshList();
     });
   };
